@@ -1,4 +1,4 @@
-#PROJECT BREIF
+# PROJECT BREIF
 
 The project seeks to identify false news. We picked the dataset
 from Kaggle. The dataset has five fields I.e., Id, Author name,
