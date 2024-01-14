@@ -1,27 +1,20 @@
-# PROJECT BRIEF
+# Fake News Detection using Logistic Regression
 
-The project seeks to identify false news. We picked the dataset
-from Kaggle. The dataset has five fields I.e., Id, Author name,
-News Title, News, and the label (which tells whether the news if
-true or false in 0 1 form). Based on the title and author, the
-model determines if it is fake or real news. The project uses a
+## Overview
+This project aims to identify false news using a dataset obtained from Kaggle. The dataset contains five fields: Id, Author name, News Title, News, and the label (indicating whether the news is true or false in 0/1 form). The model utilizes Logistic Regression for classification based on the title and author.
 
-model of Logisitic Regression.
+## Data Cleaning and Preprocessing
 
-Firstly, data is cleaned by checking for empty fields and
-replacing their null values with an empty space. News title and
-author are combined to form a new column. On the content&#39;s
-column, stemming is applied which returns the root word of
-every word. String Is converted into list to remove stop words
+- Empty fields are checked and null values are replaced with an empty space.
+- The News Title and Author are combined to form a new column.
+- Stemming is applied to the content column, returning the root word of each word.
+- The content column is converted into a list to remove stop words.
 
-from the text
+## Text to Numeric Conversion
 
-Since our content column is in the form of text, we need to
-convert it into numerical form so that we can feed the data in
-our ml model to train it. To achieve that we applied Tfidf
-Vectorizer on our content which converts the textual data into
-numerical form then our data is split into training and test data
-the testing size is 20 percent. Finally, we feed the training data
-into our ML model which then is trained to predict whether the
+- Tfidf Vectorizer is applied to convert textual data into numerical form.
+- Data is split into training and test sets, with a testing size of 20%.
 
-news is true or false
+## Model Training
+- Logistic Regression is chosen as the machine learning model.
+- The training data is fed into the Logistic Regression model for training.
